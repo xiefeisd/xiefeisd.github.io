@@ -63,13 +63,13 @@ _config.yml 文件储存了主要的定制信息。
 
 # 4 使用github pages
 
-首先建立<username>.github.io仓库，把本地站点push上去即可。
+首先建立 username.github.io 仓库，把本地站点push上去即可。
 
 仓库的建立过程有坑，见另文。
 
 # 5 了解 liquid 语言
 
-liquid 语言用 `{ }` 进行标识，`{{ }}` 里是变量，`{conment}` 是注释。
+liquid 语言用 `{ }` 进行标识，`{{ var }}` 里是变量，`{ conment }` 是注释。
 
 内容是一些简单的逻辑判断，有其他语言基础不难理解。
 
