@@ -1,12 +1,17 @@
 ---
 layout:     post
-title:      "在ubuntu上使用jekyll"
-subtitle:   "ubuntu jekyll ruby gem liquid"
+title:      "jekyll的基本用法"
+subtitle:   "在ubuntu上建立本地博客系统"
 date:       2019-03-16
 author:     "xiefeisd"
 header-img: "img/post-bg.jpg"
 tags:
     - 工具使用
+    - jekyll
+    - github pages
+    - liquid
+    - ruby
+    - gem
 ---
 
 年纪大了，记性不好，把操作过程记下来备忘。

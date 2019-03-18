@@ -1,13 +1,17 @@
 ---
 layout:     post
 title:      "webpack、babel的基本使用"
-subtitle:   "babel webpack javascript"
+subtitle:   "使用babel、webpack把es6转译成es5"
 date:       2019-03-16
 author:     "xiefeisd"
 header-img: "img/post-bg.jpg"
 tags:
     - 工具使用
-    - 踩坑
+    - babel
+    - babel-presets-env
+    - webpack
+    - javascript
+    - es6
 ---
 
 # 1 安装node.js和npm
@@ -146,6 +150,11 @@ module.exports = {
             test: /\.js$/,
             exclude: /node_modules/,
             loader: "babel-loader"
+            options: {
+                presets: [
+                    "env"
+                ]
+            }
         }]
     }
 };

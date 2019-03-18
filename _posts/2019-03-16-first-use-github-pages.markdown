@@ -1,13 +1,16 @@
 ---
 layout:     post
-title:      "第一次使用github pages的艰辛历程"
-subtitle:   "github pages"
+title:      "初见github pages"
+subtitle:   "新手第一次使用github pages的曲折过程"
 date:       2019-03-16
 author:     "xiefeisd"
 header-img: "img/post-bg.jpg"
 tags:
     - 工具使用
     - 踩坑
+    - github
+    - github pages
+    - blog
 ---
 
 # 意外 意外 意外

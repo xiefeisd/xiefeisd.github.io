@@ -1,13 +1,17 @@
 ---
 layout:     post
 title:      "狗蛋与babel的初遭遇"
-subtitle:   "babel javascript ES6"
+subtitle:   "新手第一次使用babel的曲折过程"
 date:       2019-03-16
 author:     "xiefeisd"
 header-img: "img/post-bg.jpg"
 tags:
     - 工具使用
     - 踩坑
+    - babel
+    - babel-presets-env
+    - javascript
+    - es6
 ---
 
 # 0 前言 懵逼的狗蛋
