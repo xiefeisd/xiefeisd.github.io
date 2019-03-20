@@ -8,7 +8,7 @@ header-img: "img/post-bg.jpg"
 tags:
     - 工具使用
     - jekyll
-    - github pages
+    - github-pages
     - liquid
     - ruby
     - gem

@@ -9,7 +9,7 @@ tags:
     - 工具使用
     - 踩坑
     - github
-    - github pages
+    - github-pages
     - blog
 ---
 

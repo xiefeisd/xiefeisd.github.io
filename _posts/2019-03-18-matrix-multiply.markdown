@@ -6,9 +6,8 @@ date:       2019-03-18
 author:     "xiefeisd"
 header-img: "img/post-bg.jpg"
 tags:
-    - 数学
-    - 线性代数
-    - 矩阵
+    - Math
+    - Matrix
 ---
 
 # 1 向量相乘
