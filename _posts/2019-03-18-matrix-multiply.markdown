@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "对矩阵相乘的理解"
-subtitle:   "矩阵相乘的物理意义"
+title:      "矩阵相乘的几何意义"
+subtitle:   "对矩阵相乘的形象化理解"
 date:       2019-03-18
 author:     "xiefeisd"
 header-img: "img/post-bg.jpg"
