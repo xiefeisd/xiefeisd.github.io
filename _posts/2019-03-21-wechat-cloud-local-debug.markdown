@@ -65,6 +65,8 @@ exports_mode.main(event,null)
 
 # 6 测试
 
+$ npm install test.js /* 以test.js为入口点部署项目 */
+
 $ node test.js /* 运行测试 */
 
 可以观察到，输出为a、b之和。
