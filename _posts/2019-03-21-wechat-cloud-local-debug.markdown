@@ -23,7 +23,7 @@ $ npm init /* 初始化项目 */
 
 # 3 给项目安装wx-server-sdk
 
-$ npm install -save /* 局部安装 */
+$ npm install -save wx-server-sdk /* 局部安装 */
 
 # 4 准备文件
 
