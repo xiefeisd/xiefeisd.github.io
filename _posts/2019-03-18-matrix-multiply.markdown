@@ -7,7 +7,6 @@ author:     "xiefeisd"
 header-img: "img/post-bg.jpg"
 tags:
     - Math
-    - Matrix
 ---
 
 # 1 向量相乘

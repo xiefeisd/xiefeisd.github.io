@@ -9,9 +9,6 @@ tags:
     - 工具使用
     - jekyll
     - github-pages
-    - liquid
-    - ruby
-    - gem
 ---
 
 年纪大了，记性不好，把操作过程记下来备忘。

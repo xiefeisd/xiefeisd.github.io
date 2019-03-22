@@ -8,7 +8,6 @@ header-img: "img/post-bg.jpg"
 tags:
     - 工具使用
     - git
-    - 版本管理
 ---
 
 # 1 安装

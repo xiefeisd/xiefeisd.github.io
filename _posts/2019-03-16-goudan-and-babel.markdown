@@ -7,11 +7,7 @@ author:     "xiefeisd"
 header-img: "img/post-bg.jpg"
 tags:
     - 工具使用
-    - 踩坑
     - babel
-    - babel-presets-env
-    - javascript
-    - es6
 ---
 
 # 0 前言 懵逼的狗蛋

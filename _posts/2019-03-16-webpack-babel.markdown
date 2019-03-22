@@ -8,10 +8,7 @@ header-img: "img/post-bg.jpg"
 tags:
     - 工具使用
     - babel
-    - babel-presets-env
     - webpack
-    - javascript
-    - es6
 ---
 
 # 1 安装node.js和npm

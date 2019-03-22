@@ -7,10 +7,7 @@ author:     "xiefeisd"
 header-img: "img/post-bg.jpg"
 tags:
     - 工具使用
-    - 踩坑
-    - github
     - github-pages
-    - blog
 ---
 
 # 意外 意外 意外
