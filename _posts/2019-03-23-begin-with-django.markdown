@@ -1244,6 +1244,193 @@ $ python -c "import django; print(django.__path__)"
 
 若使用polls/templates/polls/admin，则应使用'DIRS'定位到polls/templates/polls。
 
+# Part 8 打包发布
+
+## 23 准备工作
+
+### 23.1 目前的文件结构
+
+```
+$ tree -I "__pycache__|db*"
+```
+
+```
+.
+├── manage.py
+├── mysite
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── polls
+│   ├── admin.py
+│   ├── apps.py
+│   ├── __init__.py
+│   ├── migrations
+│   │   ├── 0001_initial.py
+│   │   └── __init__.py
+│   ├── models.py
+│   ├── static
+│   │   └── polls
+│   │       ├── images
+│   │       │   └── background.png
+│   │       └── style.css
+│   ├── templates
+│   │   └── polls
+│   │       ├── detail.html
+│   │       ├── index.html
+│   │       └── results.html
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+└── templates
+    └── admin
+        └── base_site.html
+```
+
+### 23.2 安装需要的工具
+
+```
+$ sudo apt-get install pyton3-pip
+```
+
+```
+$ sudo apt-get install python3-setuptools
+```
+
+## 24 打包应用
+
+### 24.1 准备文件夹
+```
+$ mkdir django-polls /* polls的同级目录 */
+```
+
+### 24.2 复制文件
+
+```
+$ cp polls django-polls -R
+```
+
+### 24.3 准备README.rst
+
+```
+django-polls/README.rst
+
+=====
+Polls
+=====
+
+Polls is a simple Django app to conduct Web-based polls. For each
+question, visitors can choose between a fixed number of answers.
+
+Detailed documentation is in the "docs" directory.
+
+Quick start
+-----------
+
+1. Add "polls" to your INSTALLED_APPS setting like this::
+
+    INSTALLED_APPS = [
+        ...
+        'polls',
+    ]
+
+2. Include the polls URLconf in your project urls.py like this::
+
+    path('polls/', include('polls.urls')),
+
+3. Run `python manage.py migrate` to create the polls models.
+
+4. Start the development server and visit http://127.0.0.1:8000/admin/
+   to create a poll (you'll need the Admin app enabled).
+
+5. Visit http://127.0.0.1:8000/polls/ to participate in the poll.
+```
+
+### 24.4 准备LICENSE
+
+```
+django-polls/LICENSE
+
+```
+
+### 24.5 准备setup.py
+
+```python
+#django-polls/setup.py
+
+import os
+from setuptools import find_packages, setup
+with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
+    README = readme.read()
+# allow setup.py to be run from any path
+os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
+setup(
+    name='django-polls',
+    version='0.1',
+    packages=find_packages(),
+    include_package_data=True,
+    license='BSD License',  # example license
+    description='A simple Django app to conduct Web-based polls.',
+    long_description=README,
+    url='https://www.example.com/',
+    author='Your Name',
+    author_email='yourname@example.com',
+    classifiers=[
+        'Environment :: Web Environment',
+        'Framework :: Django',
+        'Framework :: Django :: 3.7',  # replace "X.Y" as appropriate
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: BSD License',  # example license
+        'Operating System :: OS Independent',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Topic :: Internet :: WWW/HTTP',
+        'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
+    ],
+)
+```
+
+
+### 24.6 准备MANIFEST.in
+
+```
+django-polls/MANIFEST.in
+
+include LICENSE
+include README.rst
+recursive-include polls/static *
+recursive-include polls/templates *
+recursive-include docs *
+```
+
+### 24.7 打包
+
+```
+$ python setup.py sdist
+```
+
+## 25 使用软件包
+
+**安装**
+
+```
+$ pip install --user django-polls/dist/django-polls-0.1.tar.gz
+```
+
+**启动**
+
+启动之前把用于开发的polls目录重命名，用来验证打包、安装是否成功。
+```
+$ python manage.py runserver
+```
+
+**卸载**
+
+```
+$ pip uninstall django-polls -y
+```
 
 
 
