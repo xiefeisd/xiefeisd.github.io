@@ -18,7 +18,7 @@ tags:
 ## 1 创建项目
 
 ```
-$ python -m django --version Chunk Chunk
+$ python -m django --version
 $ django-admin startproject mysite
 $ python manage.py runserver
 $ python manage.py startapp polls
