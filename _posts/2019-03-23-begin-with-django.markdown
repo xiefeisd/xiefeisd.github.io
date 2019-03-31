@@ -97,6 +97,14 @@ INSTALLED_APPS = [
 ]
 ```
 
+```python
+# polls/apps.py
+
+from django.apps import AppConfig
+class PollsConfig(AppConfig):
+    name = 'polls'
+```
+
 ```
 $ python manage.py makemigrations polls
 $ python manage.py sqlmigrate polls 0001
