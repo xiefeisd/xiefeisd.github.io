@@ -729,6 +729,7 @@ def validate_email_exists(email):
 
 ## 14.1 文件结构
 
+```
 .
 ├── db.sqlite3
 ├── manage.py
@@ -758,6 +759,7 @@ def validate_email_exists(email):
     ├── settings.py
     ├── urls.py
     └── wsgi.py
+```
 
 ## 14.2 文件内容
 
@@ -954,6 +956,7 @@ def index(request):
 </body>
 </html>
 ```
+{% endraw %}
 
 **模板文件的实质性内容**
 
