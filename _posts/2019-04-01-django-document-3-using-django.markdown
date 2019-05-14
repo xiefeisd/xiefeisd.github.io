@@ -10,6 +10,7 @@ tags:
 ---
 
 
+{% raw %}
 
 # 1.  Django 文档
 
@@ -5975,3 +5976,5 @@ LOGGING = {
 ### 3.24.1. Localflavor
 ### 3.24.2. Comments
 ### 3.24.3. Formtools
+
+{% endraw %}
